@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navList = document.getElementById('nav-list');
 
     btnMenu.addEventListener('click', () => {
-        navList.classList.toggle('active');
         btnMenu.classList.toggle('active');
-    });
+        navList.classList.toggle('active');
+    })
 });
