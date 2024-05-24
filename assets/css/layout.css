@@ -22,7 +22,6 @@
      width: 100%;
      position: fixed;
      background-color: var(--cor-fundo);
-     opacity: 90%;
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -34,7 +33,7 @@
 
  .logo {
      margin-left: 4rem;
-     font-size: 2rem;
+     font-size: 4rem;
  }
 
  .logo:hover {
@@ -49,7 +48,16 @@
      margin-right: 4rem;
      font-family: Arial, Helvetica, sans-serif;
      text-transform: uppercase;
-     font-size: 1rem;
+     font-size: 1.2rem;
+ }
+
+ .nav-list a::after {
+     content: " ";
+     width: 30%;
+     height: 3px;
+     background-color: var(--cor-primaria);
+     position: absolute;
+     bottom: 0;
  }
 
  .nav-list li:hover {
@@ -91,6 +99,7 @@
          background-color: var(--cor-fundo);
          opacity: 0;
          font-size: 1.6rem;
+         gap: 4rem;
      }
 
      .nav-list.active {
@@ -102,11 +111,9 @@
          height: 100vh;
          transition: all .3s ease-in-out;
          text-align: center;
-     }
-
-     .nav-list a {
-         padding-inline: .4rem;
-         padding-block: 1rem;
+         opacity: 85%;
+         backdrop-filter: blur(100px);
+         -webkit-backdrop-filter: blur(100px);
      }
 
      .btn-menu {
@@ -122,7 +129,19 @@
      }
 
      .btn-menu.active .bar:nth-child(3) {
-         transform: translateY(-8px) rotate(-45deg);
+         transform: translateY(-15px) rotate(-45deg);
+     }
+ }
+
+ @media screen and (min-width:1023px) {
+     .logo {
+         margin-left: 6rem;
+         font-size: 5rem;
+     }
+
+     .nav-list {
+         margin-right: 6rem;
+         font-size: 1.5rem;
      }
  }
 
@@ -136,7 +155,7 @@
      flex-direction: column;
      text-align: center;
      height: 100vh;
-     background-image: url(/assets/img/yO2.jpg);
+     background-image: url(/assets/img/Yo.jpg);
      background-size: 90%;
      background-repeat: no-repeat;
      background-position: center;
@@ -146,11 +165,12 @@
      font-size: 1.5rem;
      font-weight: 400;
      margin-top: 07rem;
-     margin-bottom: 25rem;
+     margin-bottom: 22rem;
  }
 
  .eu-sou span {
      font-size: 1.6rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
 
  .eu-sou svg {
@@ -236,10 +256,15 @@
 
  .about h2 {
      padding-top: 8rem;
-     padding-bottom: 15rem;
+     padding-bottom: 1rem;
      font-size: 1.6rem;
      font-family: var(--font-primaria);
      text-align: center;
+ }
+
+ .about img {
+     width: 50%;
+     padding-bottom: 1rem;
  }
 
  .about p {
@@ -250,9 +275,19 @@
      text-align: center;
  }
 
+ .about-skills {
+     padding-top: 2rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .about-skills p {
+     padding-bottom: 1.5rem;
+ }
+
  .about svg {
      width: 50px;
-     fill: rgb(179, 26, 214);
  }
 
  .about svg:hover {
@@ -260,11 +295,6 @@
      fill: #27052f;
      transform: scale(1.1);
      transition: .3s;
- }
-
- .about-skills {
-     padding-top: 2rem;
-     display: flex;
  }
 
  @media screen and (min-width:390px) {
@@ -289,7 +319,7 @@
 
      .about-skills {
          padding-top: 2rem;
-         flex-direction: column;
+         display: flex;
      }
  }
 
@@ -327,20 +357,18 @@
  }
 
  .contact a {
-     margin-top: 15rem;
-     margin-bottom: 5rem;
+     margin-top: 10rem;
+     margin-bottom: 3rem;
      padding: 1rem;
  }
 
- .contact a:hover {
+ .contact svg:hover {
      transform: scale(1.1);
      transition: .2s;
-     color: #fff;
-     fill: #fff;
  }
 
  .contact a svg {
-     padding-left: 20rem;
+     padding-left: 18rem;
  }
 
  .contact-form {
@@ -352,6 +380,7 @@
  .contact-coffe {
      width: 40px;
      height: 50px;
+     padding-bottom: 1rem;
  }
 
  .contact-arrow {
@@ -364,7 +393,7 @@
  .footer {
      grid-area: footer;
      text-align: center;
-     height: 05vh;
+     margin-bottom: 2rem;
  }
 
  /* FIM FOOTER */

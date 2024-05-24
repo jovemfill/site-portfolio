@@ -18,14 +18,12 @@ html {
 
 header {
     font-size: 1.3rem;
+    opacity: 85%;
 }
 
 body {
     background-color: light-dark(#fff, #27052f);
-}
-
-span {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow-x: hidden;
 }
 
 h1,
@@ -34,6 +32,12 @@ h3,
 h4 {
     font-family: var(--font-primaria);
     font-weight: 600;
+    color-scheme: var(--cor-primaria) var(--cor-fundo);
+    font-size: 1.6rem;
+}
+
+a {
+    color: var(--cor-primaria);
 }
 
 section {
