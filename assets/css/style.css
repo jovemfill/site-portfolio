@@ -13,6 +13,7 @@ html {
     --cor-primaria: #030303;
     --cor-fundo: #fff;
     --font-primaria: arial, helvetica;
+    --font-card: font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
@@ -26,7 +27,6 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4 {
     font-family: var(--font-primaria);

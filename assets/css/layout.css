@@ -263,7 +263,7 @@
      grid-area: about;
  }
 
- .about-card {
+ .card {
      border: 10px solid #030303;
      border-radius: 10px;
      margin-top: 8rem;
@@ -272,122 +272,136 @@
      background-color: rgb(0, 156, 170);
  }
 
- .about-info {
+ .card-header {
      display: flex;
      align-items: baseline;
      background-color: rgb(210, 220, 220);
-     border-radius: 20px;
-     margin: 10px;
-     height: 30px;
+     border-radius: 15px;
+     margin-top: 5px;
+     margin-bottom: -1px;
+     margin-inline: 04px;
+     height: 25px;
+     border: 3px solid #3c5c9c;
+     box-shadow: 0px 0px 1px 0px;
  }
 
- .info-mana {
+ .card h2 {
+     margin-inline: .6rem;
+     font-size: 1.2rem;
+     font-family: var(--font-card);
+ }
+
+ .mana-cost {
      display: flex;
      margin-left: auto;
-     gap: 5px;
+     margin-right: .6rem;
+     gap: 2px;
+ }
+
+ .cost {
+     box-shadow: 0px 2px 0px 0px;
+     border-radius: 20px;
+     width: 18px;
+     height: 17px;
+     margin: 0 auto;
+     background-color: #bbbbbb;
  }
 
  .mana {
-     box-shadow: 2px 2px 2px 2px;
-     border-radius: 20px;
-     width: 20px;
-     height: 20px;
-     margin: 0 auto;
-     background-color: #bbbbbb;
- }
-
- .gota {
      margin-left: auto;
-     box-shadow: 2px 2px 2px 2px;
+     box-shadow: 0px 2px 0px 0px;
      border-radius: 20px;
-     width: 20px;
-     height: 20px;
+     width: 18px;
+     height: 17px;
      margin: 0 auto;
      background-color: #bbbbbb;
- }
-
- .about h2 {
-     margin-inline: 1rem;
-     font-size: 1rem;
-     font-family: var(--font-primaria);
-     text-align: center;
  }
 
  .card-img {
      width: 90%;
-     height: 55%;
+     height: 48%;
+     border: 3px solid #3c5c9c;
+     box-shadow: 0px 0px 1px 0px;
+     margin-bottom: -1px;
  }
 
- .card-name {
-     align-items: baseline;
-     background-color: rgb(210, 220, 220);
-     border-radius: 20px;
-     height: 28px;
-     margin: 10px;
- }
-
- .card-name p {
-     font-weight: 600 !important;
-     text-align: center;
- }
-
- .about p {
-     font-family: var(--font-primaria);
-     font-size: 1rem;
-     font-weight: 400;
-     color: #030303;
-     text-align: center;
- }
-
- .about-skills {
-     margin: 1rem;
+ .card-type {
      display: flex;
-     align-items: center;
-     align-items: baseline;
+     justify-content: left;
      background-color: rgb(210, 220, 220);
-     border-radius: 20px;
-     height: 100px;
+     border-radius: 13px;
+     margin-block: -1px;
+     margin-inline: 4px;
+     height: 22px;
+     border: 3px solid #3c5c9c;
+     box-shadow: 0px 0px 1px 0px;
  }
 
- .about svg {
+ .card-type svg {
+     width: 2px;
+ }
+
+ .card p {
+     font-family: var(--font-card);
+     font-size: 1.02rem;
+     font-weight: bold;
+     color: #030303;
+     margin-left: 10px;
+     margin-right: 5px;
+ }
+
+ .card-text {
+     margin-inline: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: rgb(210, 220, 220);
+     height: 138px;
+     width: 90%;
+     border: 3px solid #3c5c9c;
+     box-shadow: 0px 0px 1px 0px;
+ }
+
+ .card-text p {
+     font-weight: 400;
+     font-size: 1.1rem;
+     margin: .3rem;
+     margin-top: .5rem;
+ }
+
+ .text {
+     display: flex;
+ }
+
+ .skills {
+     display: flex;
+ }
+
+ .card svg {
      width: 20px;
  }
 
- @media screen and (min-width:389px) {
-     .about h2 {
-         margin-top: 09rem;
-     }
+ .card-footer {
+     background-color: black;
+     display: flex;
+     height: 25px;
  }
 
- @media screen and (min-width:414px) {
-     .about h2 {
-         margin-top: 11rem;
-     }
+ .card-stats {
+     background-color: #bbbbbb;
+     height: 20px;
+     width: 40px;
+     border-radius: 10px;
+     margin-left: auto;
+     margin-right: 10px;
+     padding: 1px;
+     margin-bottom: 50px;
+
  }
 
- @media screen and (min-width:768px) {
-     .about h2 {
-         font-size: 2rem;
-         margin-top: 13rem;
-     }
-
-     .about-skills {
-         margin-top: 2rem;
-         flex-direction: row;
-         gap: 1rem;
-     }
- }
-
- @media screen and (min-width:820px) {
-     .about h2 {
-         margin-top: 20rem;
-     }
- }
-
- @media screen and (min-width:1024px) {
-     .about h2 {
-         margin-top: 25rem;
-     }
+ .card-stats p {
+     font-size: 1.1rem;
+     text-align: left;
  }
 
  /* FIM SOBRE */
@@ -397,7 +411,6 @@
      grid-area: portfolio;
      display: flex;
      flex-direction: column;
-     z-index: -1;
  }
 
  .portfolio h3 {
@@ -419,7 +432,6 @@
      box-shadow: 1px 1px 1px 1px;
      background-size: cover;
      background-position: 100% -0%;
-     position: relative;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -516,7 +528,7 @@
      background-color: var(--cor-primaria);
      border-radius: 05px;
      padding: 1rem;
-     padding-inline: 2rem;
+     padding-inline: 2.7rem;
  }
 
  label {
@@ -549,7 +561,7 @@
  .footer {
      grid-area: footer;
      text-align: center;
-     margin-bottom: 2rem;
+     margin-block: 2rem;
      height: 05vh;
  }
 
