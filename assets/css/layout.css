@@ -444,14 +444,12 @@
 
  .job a {
      cursor: pointer;
-     text-align: center;
      opacity: 0;
      padding-block: 10rem;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     text-transform: uppercase;
  }
 
  .job a:hover {
+     text-align: center;
      opacity: 100;
      font-size: 2.2rem;
      padding: 3rem;
