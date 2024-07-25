@@ -168,7 +168,7 @@
  .eu-sou h1 {
      font-size: 1.5rem;
      font-weight: 400;
-     margin-top: 08rem;
+     margin-top: 06rem;
  }
 
  .eu-sou span {
@@ -199,19 +199,14 @@
  @media screen and (min-width:389px) {
      .eu-sou h1 {
          font-size: 1.5rem;
-         margin-top: 12rem;
-     }
-
-     .eu-sou img {
-         padding-block: 4rem;
+         margin-top: 8rem;
      }
  }
 
  @media screen and (min-width:414px) {
      .eu-sou h1 {
-         margin-top: 13rem;
+         margin-top: 10rem;
      }
-
  }
 
  @media screen and (min-width:768px) {
@@ -268,7 +263,7 @@
      border-radius: 10px;
      margin-top: 8rem;
      width: 300px;
-     height: 450px;
+     height: 420px;
      background-color: rgb(0, 156, 170);
  }
 
@@ -346,12 +341,12 @@
      font-size: 1.02rem;
      font-weight: bold;
      color: #030303;
-     margin-left: 10px;
-     margin-right: 5px;
+     margin-left: 12px;
+     margin-right: 4px;
  }
 
  .card-text {
-     margin-inline: 1rem;
+     margin: auto;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -393,15 +388,28 @@
      width: 40px;
      border-radius: 10px;
      margin-left: auto;
-     margin-right: 10px;
+     margin-right: 07px;
      padding: 1px;
-     margin-bottom: 50px;
-
+     margin-top: -15px;
+     box-shadow: 0px 0px 1px 0px;
  }
 
  .card-stats p {
      font-size: 1.1rem;
      text-align: left;
+ }
+
+ @media screen and (min-width:414px) {
+     .card {
+         margin-top: 12rem;
+     }
+ }
+
+ @media screen and (min-width:820px) {
+     .card {
+         margin-top: 14rem;
+     }
+
  }
 
  /* FIM SOBRE */
@@ -414,7 +422,7 @@
  }
 
  .portfolio h3 {
-     margin-top: 20rem;
+     margin-top: 7rem;
  }
 
  .col-job {
@@ -458,7 +466,23 @@
      text-transform: uppercase;
  }
 
+ @media screen and (min-width:390px) {
+     .portfolio h3 {
+         margin-top: 11rem;
+     }
+ }
+
+ @media screen and (min-width:414px) {
+     .portfolio h3 {
+         margin-top: 10rem;
+     }
+ }
+
  @media screen and (min-width:768px) {
+     .portfolio h3 {
+         margin-top: 10rem;
+     }
+
      .col-job {
          display: flex;
          flex-direction: row;
@@ -467,6 +491,12 @@
      .job a:hover {
          padding: 2rem;
          font-size: 2.4rem;
+     }
+ }
+
+ @media screen and (min-width:820px) {
+     .portfolio h3 {
+         margin-top: 11rem;
      }
  }
 
@@ -526,7 +556,8 @@
      background-color: var(--cor-primaria);
      border-radius: 05px;
      padding: 1rem;
-     padding-inline: 2.7rem;
+     width: 77%;
+     padding-inline: 1rem;
  }
 
  label {
@@ -544,6 +575,11 @@
 
  textarea {
      height: 3rem;
+ }
+
+ button:hover {
+     color: #fff;
+     background-color: #030303;
  }
 
  @media screen and (min-width:389px) {
